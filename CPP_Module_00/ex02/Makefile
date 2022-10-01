@@ -1,8 +1,8 @@
-NAME		= megaphone
+NAME		= deposit
 
-SRCS		= megaphone.cpp
+SRCS		= Account.cpp tests.cpp
 
-OBJS		= megaphone.o
+OBJS		= $(SRCS:.cpp=.o)
 
 CC			= C++
 
