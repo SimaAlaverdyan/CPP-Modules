@@ -4,6 +4,7 @@
 #include <string>
 #include <iostream>
 #include "Contact.hpp"
+#include <iomanip>
 
 class PhoneBook
 {
@@ -12,7 +13,7 @@ class PhoneBook
             int     _size;
             int     _index;
     public:
-            PhoneBook() : _size(0), _index(0) {}
+            PhoneBook();
             int     get_size() const;
             void    add_contact(std::string data[5]);
             void    display_contact(int i) const;

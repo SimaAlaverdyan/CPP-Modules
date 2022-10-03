@@ -1,16 +1,18 @@
 #include "PhoneBook.hpp"
 
+PhoneBook::PhoneBook() : _size(0), _index(0) {}
+
 void    print_info(std::string str)
 {
-    unsigned long j = 0;
     if (str.length() > 10)
         std::cout << str.substr(0, 9) << ".";
     else
     {
-        j = 0;
-        while (j++ < 10 - str.length())
-            std::cout << " ";
-        std::cout << str;
+        // j = 0;
+        // while (j++ < 10 - str.length())
+        //     std::cout << " ";
+        // std::cout << str;
+        std::cout << std::setw(10) << str;
     }
 }
 

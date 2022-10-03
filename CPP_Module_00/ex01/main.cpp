@@ -59,13 +59,14 @@ int main(void)
             book.display_phonebook();
             std::cout << "\nInput index: ";
             std::cin >> index;
-            if (std::cin.fail() || index < 0 || index > book.get_size())
+            if (std::cin.fail() || index < 0 || index >= book.get_size())
             {
                 std::cout << "\033[0;36mInvalid index\n\033[0m";
                 getline(std::cin, input);
                 continue;
             }
             book.display_contact(index);
+            continue;
             std::getline(std::cin, input);
         }
         else if (input == "EXIT")
