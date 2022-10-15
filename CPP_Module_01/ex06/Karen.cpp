@@ -46,6 +46,7 @@ void Karen::complain(std::string level)
         if (!arr[i].compare(level))
         {
             (this->*ptrFunc[i])();
+            break;
         }
     }
 }

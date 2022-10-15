@@ -2,28 +2,25 @@
 
 static int	level(char *argv)
 {
-	std::string	str = argv;
-
-	if (str.compare("debug") == 0)
-		return (0);
-	else if (str.compare("info") == 0)
-		return (1);
-	else if (str.compare("warning") == 0)
-		return (2);
-	else if (str.compare("error") == 0)
-		return (3);
-	return (4);
+	std::string arr[4] = {"debug", "info", "warning", "error"};
+	
+	for (int i = 0; i < 4; i++)
+	{
+		if (argv == arr[i])
+			return (i);
+	}
+	return (-1);
 }
 
 int main(int argc, char **argv)
 {
     Karen	karen;
-	int		command;
+	int		lvl;
 
 	if (argc == 2)
 	{
-		command = level(argv[1]);
-		switch (command)
+		lvl = level(argv[1]);
+		switch (lvl)
 		{
 			case 0:
 				karen.complain("debug");
