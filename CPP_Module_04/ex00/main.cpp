@@ -22,7 +22,7 @@ int main()
     std::cout << "This is WrongAnimal testing" << std::endl;
     
     const WrongAnimal *wAnimal = new WrongAnimal();
-    const WrongCat *wCat = new WrongCat();
+    const WrongAnimal *wCat = new WrongCat();
 
     std::cout << "WrongCat type: " << wCat->getType() << " " << std::endl;
     wCat->makeSound();

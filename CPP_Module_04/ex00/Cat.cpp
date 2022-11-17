@@ -11,6 +11,12 @@ Cat::Cat(const Cat &copy) : Animal("Cat")
     std::cout << "Cat copy constructor" << std::endl;
 }
 
+Cat &Cat::operator=(const Cat &ob)
+{
+    this->type = ob.type;
+    return (*this); 
+}
+
 Cat::~Cat()
 {
     std::cout << "Cat destructor" << std::endl;

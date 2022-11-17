@@ -17,5 +17,11 @@ int main()
 
     for (int i = 0; i < 10; i++)
         delete animals[i];
+
+    // Dog basic;
+    // {
+    //     Dog tmp = basic;
+    // }
+    // std::cout<<"asd\n";
     return 0;
 }

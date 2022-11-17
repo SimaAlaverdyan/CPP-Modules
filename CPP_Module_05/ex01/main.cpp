@@ -14,7 +14,7 @@ int main()
     }
     catch(const std::exception& e)
     {
-        std::cerr << e.what() << '\n';
+        std::cerr << e.what() << std::endl;
     }
     Bureaucrat  bur1("b1", 10);
     Form        form4("form4", 150, 150);
@@ -23,7 +23,7 @@ int main()
     bur1.signForm(form4);
     std::cout << form4 << std::endl;
 
-    Bureaucrat  bur2("b2", 10);
+    Bureaucrat  bur2("b2", 40);
     Form        form5("form5", 15, 81);
 
     std::cout << form5 << std::endl;

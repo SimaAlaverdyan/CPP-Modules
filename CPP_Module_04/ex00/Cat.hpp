@@ -9,8 +9,8 @@ class Cat : public Animal
         Cat();
         ~Cat();
         Cat(const Cat &copy);
-        
-        using Animal::operator=;
+
+        Cat &operator=(const Cat &ob);
         void    makeSound() const;
 };
 

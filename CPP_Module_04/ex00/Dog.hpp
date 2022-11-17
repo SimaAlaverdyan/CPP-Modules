@@ -10,7 +10,7 @@ class Dog : public Animal
         ~Dog();
         Dog(const Dog &copy);
         
-        using Animal::operator=;
+        Dog	&operator=(const Dog &copy);
         void    makeSound() const;
 };
 

@@ -11,6 +11,12 @@ Dog::Dog(const Dog &copy) : Animal("Dog")
     std::cout << "Dog copy constructor" << std::endl;
 }
 
+Dog &Dog::operator=(const Dog &ob)
+{
+    this->type = ob.type;
+    return (*this); 
+}
+
 Dog::~Dog()
 {
     std::cout << "Dog destructor" << std::endl;
